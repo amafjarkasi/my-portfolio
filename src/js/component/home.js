@@ -27,7 +27,11 @@ export function Home() {
 							<a href="#">
 								{" "}
 								<span className="icon">
-									<i className="fab fa-wrapper fa-github"></i>
+									<a
+										href="https://github.com/amafjarkasi/"
+										target="_new">
+										<i className="fab fa-wrapper fa-github"></i>
+									</a>
 								</span>
 							</a>{" "}
 						</div>

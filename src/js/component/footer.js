@@ -7,7 +7,7 @@ export function Footer() {
 	return (
 		<div>
 			<footer className="footer">
-				<h6 className="footer__title white uppercase">Logo</h6>
+				<h6 className="footer__title white uppercase">PORTFOLIO</h6>
 				<div className="content">
 					<div className="divider"></div>
 
@@ -70,7 +70,7 @@ export function Footer() {
 						</div>
 					</div>
 				</div>
-				<p className="subtitle">Company © 2018.</p>
+				<p className="subtitle">Amaf Jarkasi © 2021.</p>
 			</footer>
 		</div>
 	);
