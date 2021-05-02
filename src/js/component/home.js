@@ -4,6 +4,7 @@ import { Button, Menu, SubMenu, Layout, Carousel } from "element-react";
 import { Footer } from "./footer";
 import { Placeholder } from "./placeholder";
 import { Frames } from "./frames";
+import { Repos } from "./repos";
 
 //create your first component
 export function Home() {
@@ -67,6 +68,18 @@ export function Home() {
 									A webpage powered by <b>Cirrus.</b>
 								</h6>
 							</div>
+							{/* <Cardholder /> */}
+							{/* <div className="u-inline-flex bg-orange-100">
+								<div className="px-2 py-1 m-1 u-round">
+									<Repos />
+								</div>
+								<div className="px-2 py-1 m-1 u-round">
+									<Repos />
+								</div>
+								<div className="px-2 py-1 m-1 u-round">
+									<Repos />
+								</div>
+							</div> */}
 							<Placeholder />
 						</div>
 					</div>
