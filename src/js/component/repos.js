@@ -1,39 +1,37 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {
-	Card,
-	Button,
-	Menu,
-	SubMenu,
-	Layout,
-	Carousel,
-	svg
-} from "element-react";
+import PropTypes from "prop-types";
+import { Card, Button, Menu, SubMenu, Layout, Carousel } from "element-react";
 
 //create your first component
-export function Repos() {
+export const Repos = props => {
 	return (
-		<div className="card" style="max-width: 250px;">
-			<div className="content u-text-center pt-3">
-				<svg
-					aria-hidden="true"
-					focusable="false"
-					data-prefix="fas"
-					data-icon="bolt"
-					className="svg-inline--fa fa-bolt fa-w-10 fa-wrapper text-blue-600 bg-blue-100 p-3"
-					role="img"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 320 512"
-					style="border-radius: 100%; height: 4.75rem; width: 4.75rem;">
-					<path
-						fill="currentColor"
-						d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"></path>
-				</svg>
-				<p id="projectname" className="title mt-2 mb-0">
-					Fast. Very fast.
-				</p>
-				<p>Blazing fast speed you can rely on.</p>
+		<>
+			<div className="tile u-shadow p-1">
+				<div className="tile__icon"></div>
+				<div className="tile__container">
+					<p className="tile__title m-0">
+						<b>{props.title}</b>
+					</p>
+					<p className="tile__subtitle m-0">{props.description}</p>
+					<span className="info">
+						<b>{props.languages}</b>
+					</span>
+					<br />
+					<div className="tile__buttons m-0">
+						<button className="btn-primary btn-small uppercase">
+							View
+						</button>
+					</div>
+				</div>
 			</div>
-		</div>
+		</>
 	);
-}
+};
+
+Repos.propTypes = {
+	title: PropTypes.string,
+	description: PropTypes.string,
+	link: PropTypes.string,
+	languages: PropTypes.string
+};
